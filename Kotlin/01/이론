@@ -1,0 +1,16 @@
+변수
+- 변경 가능한 변수
+    - var(variable)
+- 변경 불가능한 변수(상수!)
+    - val(value)
+
+선언법
+- var school
+- val school
+할당(initialize)
+- school = "다대고"
+선언+할당 => "코틀린에서는 원칙적으로 선언과 동시에 할당 해야함!!"
+- val(var) school = "다대고"
+
+암묵적 규칙
+- val 선언 시 대문자로 선언
