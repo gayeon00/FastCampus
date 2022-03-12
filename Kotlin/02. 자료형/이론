@@ -1,0 +1,44 @@
+02. 자료형( Type )
+
+1. 정수형
+    - Byte (-128 ~ +127)
+    - Short (-32768 ~ +32767)
+    - Int
+    - Long
+
+    => 양수만 표현
+        - UByte(0~255)
+        - UShort(0~65535)
+        - UInt
+        - ULong
+
+2. 실수형
+    - Float: 4바이트
+    - Double: 8바이트
+
+3. 논리형
+    - Boolean: true, false
+
+4. 문자형
+    - 한 글자 ex) 'A', 가
+
+5. 문자열형
+    - ex) abc, "가나다"
+
+* 자료형 추론
+-> var 변수명: 자료형 = 값(기본 포맷!!)
+var changeYes: Byte = 100
+
+-> but 자료형 생략 가능!
+var changeYes = 100
+(코틀린이 자료형 추론해줌
+-> 정수형 기본: Int
+-> 실수형 기본: Double)
+
+* 추론 힌트 주는 법(잘 사용하진 않음!)
+var number1 = 100 -> Int
+var number2 = 100L -> Long
+=> 추론을 사용하지 말고, 변수를 선언할 때 자료형을 적어주는 게 좋다!!
+
+val bigNumber: Int = 182_375_823_364_859
+=> 자리수 구분위해 _적어줄 수 있음!
