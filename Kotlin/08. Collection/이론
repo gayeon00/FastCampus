@@ -1,0 +1,46 @@
+- 콜렉션은 전부 다 크기가 고정되어 있지 않음!!
+- 기본적으로 Immutable(안에 값들을 바꿀 수 없음! 추가, 변경, 삭제) 사용하는 게 좋음!
+- Immutable 이라도 var로 선언하면 다른 값으로 할당 가능!
+    ex) var number = listOf<Int>(1, 2, 3)
+        number = listOf<String>("string", ...)
+
+
+- 변경 가능 여부
+    - Mutable
+    - Immutable
+- 특징으로 분리
+    - List
+        - Mutable, Immutable
+    - Set
+        - Mutable, Immutable
+    - Map
+        - Mutable, Immutable
+
+
+- List
+    -Immutable(기본!)
+        - 형태
+            listOf<자료형>(값1, 값2, 값3)
+            ex) val numbers = listOf<Int>(1, 2, 3)
+    -Mutable
+        - 형태
+            mutableListOf<자료형>(값1, 값2, 값3)
+            ex) val numbers = mutableListOf<Int>(1, 2, 3)
+
+
+- Set
+    - Immutable
+        - 형태
+            setOf<자료형>(값1, 값2, 값3, 값2) -> 원소들로만 남겨줌
+    - Mutable
+        - 형태
+            mutableSetOf<자료형>(값2, 값2, 값3, 값1)
+
+- Map
+    - Immutable
+        - 형태
+            mapOf<자료형1, 자료형2>(키1 to 밸류1, 키2 to 밸류2, ...)
+            ex) var numbers = mapOf<Int, String>(1 to "일", 2 to "이", ...)
+    - Mutable
+        - 형태
+            immutableMapOf<자료형1, 자료형2>(키1 to 밸류1, 키2 to 밸류2, ...)습

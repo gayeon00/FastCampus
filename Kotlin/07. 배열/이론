@@ -1,0 +1,26 @@
+- 배열은 저장될 수 있는 값의 갯수를 정해놓아야 하고, 이 갯수는 변경할 수 없음
+- 값 자체는 변경할 수 있음!
+
+1. 배열을 선언하는 방법(1)
+- arrayOf(<자료형>)(값1, 값2, 값3)
+    - 자료형 생략 시 여러 개의 자료형을 담을 수 있음!
+        ex) var array1 = arrayOf(true, "안녕", 10)
+    - 자료형 명시 시 해당 자료형만!
+        ex) var array2 = arrayOf<Int>(10, 20, 30)
+    - <자료형>을 대체할 수 있는 방법
+        ex) var array3 = intArrayOf(1,2,3,4,5)
+            var array4 = booleanArrayOf(true, false, true)
+            var nullArray = arrayOfNulls(5갯수?)
+
+2. 배열을 선언하는 방법(2)
+- (자료형)Array(크기, ({값}))
+    ex) var array6 = Array(10, {0}) : 10칸짜리 배열, 기본값 0
+        var array7 = IntArray(10, {0})
+        var array8 = DoubleArray(10,{0.0})
+        StringArray는 없음!
+
+3. 배열을 선언하는 방법(3)
+- Array(<자료형>)(크기, ({값}))
+    ex) var array9 = Array(10, {0})
+        var array10 = Array<Int>(10, {0})
+        var array11 = Array<String>(10, {"Hi"})

@@ -1,0 +1,28 @@
+- 반복 가능한! -> 시작과 끝이 있음 -> 범위가 있음!!
+
+- Collection의 경우
+    - listOf
+    - setOf
+    - mapOf
+    - mutable~~Of
+    - (1,2,3,4)
+    => 시작 숫자, 끝 숫자 있음! ==> Iterable!
+
+- Array의 경우
+    => 시작 숫자, 끝 숫자 있음! ==> Iterable!
+
+- Progression
+    - 시작점과 끝점이 있고, 범위를 정할 수 있다!!
+    - 구간
+        - 구간 1: 반복 시 1씩 이동한다! => "range"
+        - 1이 아닌 경우 명시해줘야!
+            ex) 1..10 step 2
+                10 downTo 1 step 2
+                (1..10).reversed() step 5
+
+    - Range
+        - 구간이 1인 Progression
+
+        - 1..10         -> 1부터 10까지(이하)
+        - 1.rangeTo(10) -> 1부터 10까지(이하)
+        - 1 until 10    -> 1부터 10까지("미만")

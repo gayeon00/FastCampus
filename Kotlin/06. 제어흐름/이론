@@ -1,0 +1,10 @@
+흐름 제어
+
+1. if
+2. if / else if / else
+3. when
+    when(값){
+        case 값1 -> 동작1
+        case 값2 -> 동작2
+        else -> 동작3
+    }
